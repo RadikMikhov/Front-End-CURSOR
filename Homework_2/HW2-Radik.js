@@ -1,5 +1,15 @@
-let numberN = +prompt("Введіть число N : ");
-let numberM = +prompt("Введіть число M : ");
+let numberN = null;
+let numberM = null;
+
+do {
+  numberN = +prompt("Введіть число N : ");
+} while (!numberN || NaN || !Number.isInteger(numberN));
+console.log("N = " + numberN);
+
+do {
+  numberM = +prompt("Введіть число M : ");
+} while (!numberM || NaN || !Number.isInteger(numberM) || numberM <= numberN);
+console.log("M = " + numberM);
 
 let answer = confirm("Пропускати парні числа?");
 
