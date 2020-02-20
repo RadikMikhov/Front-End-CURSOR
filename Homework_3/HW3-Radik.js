@@ -94,7 +94,7 @@ function isPalindrom(str) {
 // функція 11 Для видалення літери, що зустрічається більше одного разу
 function deleteDuplicateLetter(str) {
   str = str.toString();
-  str = str.toString();
+  str = str.toLowerCase();
   let result = "";
   for (let x = 0; x < str.length; x++) {
     let y = 0;
