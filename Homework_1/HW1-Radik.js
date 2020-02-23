@@ -30,6 +30,7 @@ if (priceAllProducts % 2 === 0) {
 } else {
   console.log("Чи є сума парною - " + false);
 }
+
 // 7 Виведення решти при оплаті 500 грн
 let change = 500 - (PRICE_BREAD + PRICE_CHEESE + PRICE_MEAT);
 console.log("Решта з 500 грн - " + change + "грн");
