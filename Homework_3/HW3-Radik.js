@@ -1,4 +1,4 @@
-// Функція 1 getMaxDigit(number)
+// 1 Создать функцию getMaxDigit(number) – которая получает любое число и выводит самую большую цифру в этом числе.
 function getMaxDigit(number) {
   number = number.toString();
   let max = 0;
@@ -10,7 +10,7 @@ function getMaxDigit(number) {
   return max;
 }
 
-// Функція 2 піднесення до степення
+// 2 Создать функцию, которая вычисляет степень числа. Не используя Math.pow и **. Используйте цикл
 function getExp(number, exp) {
   let result = 1;
   for (let i = 0; i < exp; i++) {
@@ -19,7 +19,7 @@ function getExp(number, exp) {
   return result;
 }
 
-// Функція 3 виправлення імкені
+// 3 Создать функцию, которая форматирует имя, делая первую букву заглавной. ("влад" -> "Влад", "вЛАД" -> "Влад" и так далее);
 function getCorectName(name) {
   let result = "";
   for (let i = 0; i < name.length; i++)
@@ -29,7 +29,7 @@ function getCorectName(name) {
   return result;
 }
 
-// Функція 4 для підкахунку податку
+// 4 Создать функцию, которая вычисляет сумму оставшуюся после оплаты налога от заработной платы. (Налог = 18% + 1.5% -> 19.5%).
 function pureSalary(salary) {
   const TAX = 19.5;
   const COEFFICIENT = (100 - TAX) / 100;
@@ -37,13 +37,13 @@ function pureSalary(salary) {
   return result;
 }
 
-// Функцыя 5 для рандома getRandomNumber(1, 10) -> 5
+// 5 Создать функцию, которая возвращает случайное целое число в диапазоне от N до M. Пример: getRandomNumber(1, 10) -> 5
 function getRandomNumber(N, M) {
   let random = Math.floor(N + Math.random() * (M + 1 - N));
   return random;
 }
 
-// Функція 6 для підрахунку countLetter("а", "Асталависта") -> 4
+// 6 Создать функцию, которая считает сколько раз определенная буква повторяется в слове. Пример: countLetter("а", "Асталависта") -> 4
 function countLetter(letter, str) {
   let count = 0;
   for (let i = 0; i < str.length; i++)
@@ -51,7 +51,7 @@ function countLetter(letter, str) {
   return count;
 }
 
-// Функція 8 Що видає рандомний пароль
+// 8 Создайте функцию генерации случайного пароля (только числа), длинна устанавливается пользователем или по умолчанию = 8 символам.
 function getRandomPassword(passLength = 8) {
   let password = "";
   for (let i = 0; i < passLength; i++) {
@@ -60,7 +60,7 @@ function getRandomPassword(passLength = 8) {
   return password;
 }
 
-// Функція 9 Для видалення окремих літер з тексту
+// 9 Создайте функцию, которая удаляет все буквы из предложения.
 function deleteLatters(text, letter) {
   let newString = letter.toLowerCase();
   let result = "";
@@ -72,7 +72,7 @@ function deleteLatters(text, letter) {
   return result;
 }
 
-// Функція 10 Чи є слово поліндромом
+// 10 Создайте функцию, которая проверяет является ли слово палиндромом.
 function isPalindrom(str) {
   let result = "";
   for (let i = 0; i < str.length; i++) {
@@ -91,7 +91,7 @@ function isPalindrom(str) {
   return palidrome;
 }
 
-// функція 11 Для видалення літери, що зустрічається більше одного разу
+// 11 Создайте функцию, которая удалит из предложения буквы, которые встречаются более 1 раза.
 function deleteDuplicateLetter(str) {
   str = str.toString();
   str = str.toLowerCase();
