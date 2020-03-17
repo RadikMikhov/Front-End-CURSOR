@@ -19,6 +19,7 @@ function removeBlocks() {
     block.remove();
   });
 }
+
 function generateBlocksInterval() {
   generateBlocks();
   let interval = setInterval(() => {
