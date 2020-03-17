@@ -1,31 +1,32 @@
-let squares = document.querySelector('.square');
+let squares = document.querySelector(".bigSquare");
 function generateBlocks() {
   for (let i = 0; i < 25; i++) {
-    let newSquare = document.createElement('div');
-    newSquare.className = 'blocks';
-    let rand1 = Math.floor(Math.random() * 256);
-    let rand2 = Math.floor(Math.random() * 256);
-    let rand3 = Math.floor(Math.random() * 256);
-    newSquare.style.width = '50px';
-    newSquare.style.height = '50px';
-    newSquare.style.background = `rgb(${rand1},${rand2},${rand3})`;
-    squares.append(newSquare);
+    let littleSquare = document.createElement("div");
+    littleSquare.className = "blocks";
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    littleSquare.style.width = "50px";
+    littleSquare.style.height = "50px";
+    littleSquare.style.background = `rgb(${r},${g},${b})`;
+    squares.append(littleSquare);
   }
 }
 
 function removeBlocks() {
-  let allBlocks = document.querySelectorAll('.blocks');
-  allBlocks.forEach(block => {
-    block.remove();
-  });
+  let allBlocks = document.querySelectorAll(".blocks");
+  for (let i = 0; i < allBlocks.length; i++) {
+    allBlocks[i].remove();
+  }
 }
 
 function generateBlocksInterval() {
-  generateBlocks();
+  removeBlocks();
   let interval = setInterval(() => {
     removeBlocks();
     generateBlocks();
   }, 1000);
   return interval;
 }
+
 generateBlocksInterval();
