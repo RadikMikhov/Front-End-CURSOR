@@ -18,3 +18,9 @@
 <a href="https://radikmikhov.github.io/Front-End-CURSOR/Homework_09/HW9-Radik.html">Homework_09</a><br>
 
 <a href="https://radikmikhov.github.io/Front-End-CURSOR/Homework_10/index.html">Homework_10</a><br>
+
+<a href="https://radikmikhov.github.io/Front-End-CURSOR/Homework_11/HW11-Radik.html">Homework_11</a><br>
+
+<a href="https://radikmikhov.github.io/Front-End-CURSOR/Homework_12/index.html">Homework_12</a><br>
+
+<a href="https://radikmikhov.github.io/Front-End-CURSOR/Homework_13/HW13-Radik.html">Homework_13</a><br>
